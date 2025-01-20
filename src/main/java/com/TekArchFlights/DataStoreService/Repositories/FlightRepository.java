@@ -1,4 +1,7 @@
 package com.TekArchFlights.DataStoreService.Repositories;
 
-public interface FlightRepository {
+import com.TekArchFlights.DataStoreService.Models.Flight;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FlightRepository extends JpaRepository<Flight, Long> {
 }
